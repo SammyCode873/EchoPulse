@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>EchoPulse - Feel the engagement ripple</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css">
+  <style>
+
+  </style>
+</head>
+
+<body class="">
+  <header class="flex sticky top-0 bg-white justify-between items-center px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
+    <section class="flex items-center gap-7">
+      <p class="font-bold text-gray-900 text-4xl cursor-not-allowed">EchoPulse</p>
+      <ul class="hidden md:flex items-center gap-6 font-semibold text-gray-500">
+        <li><a href="">Features</a></li>
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Resources</a></li>
+      </ul>
+    </section>
+
+    <div class="hidden md:flex gap-4 items-center">
+      <button class="font-semibold text-gray-500">Login</button>
+      <button class="text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button>
+    </div>
+
+    <button id="menuBtn" class="fa-solid fa-bars block md:hidden text-gray-600 text-3xl"></button>
+
+    <section id="menu"
+      class="absolute top-20 left-1/2 -translate-x-1/2 w-[85%]  p-6 rounded-xl font-semibold text-white bg-purple-950 hidden text-center md:hidden">
+      <ul class="leading-8">
+        <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Features</a></li>
+        <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Pricing</a></li>
+        <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Resources</a></li>
+      </ul>
+
+      <hr class="my-4 border-gray-700">
+
+      <div>
+        <button class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full mb-2">Login</button>
+        <button class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button>
+      </div>
+    </section>
+  </header>
+
+  <main class="px-4 sm:px-8 lg:px-12 xl:px-20 md:pb-11 sm:pb-11 lg:h-screen">
+    <section class="flex flex-col lg:flex-row-reverse items-center justify-between mt-24 gap-10">
+      <img src="./images/illustration-working.svg" alt=""
+        class="mx-auto w-[90%] sm:w-[70%] md:w-[55%] lg:w-[60%] xl:w-[50%]">
+
+      <div class="flex-1">
+        <h1 class="font-bold text-center lg:text-left text-3xl sm:text-4xl md:text-5xl lg:text-3xl xl:text-6xl">Grow
+          Your
+          <br class="xl:block hidden"> Audience Fast
+        </h1>
+        <p class="font-bold text-center lg:text-left text-xl sm:text-xl md:text-xl mt-4 text-gray-500 xl:text-xl">
+          Turn casual visitors into loyal followers with our proven social-media boost tools.
+        </p>
+        <div class="flex justify-center lg:justify-start mt-5 items-center text-xl font-semibold">
+          <button class="text-white bg-cyan-400 px-10 py-3 rounded-full">Get Started</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <section
+    class="px-4 xl:px-80 flex-1 mt-6 bg-indigo-950 flex justify-center items-center gap-4 sm:px-8 lg:px-12 py-10 text-center w-full"
+    style="background-image: url('./images/bg-shorten-desktop.svg'); background-repeat: no-repeat; background-size: cover;">
+    <div>
+      <input type="text" name="socialLink" id="socialLink" placeholder="Paste Your Social Media Link..."
+        class="focus:outline-none bg-neutral-200 px-2 py-3 w-80"><br>
+      <button class="bg-cyan-400 px-20 mt-3 xl:py-2 text-center text-white font-medium rounded-md w-80">Boost</button>
+    </div>
+  </section>
+
+  <section class="mt-20">
+    <h2 class="font-bold md:px-2 sm:px-2 text-center text-5xl text-gray-900">Advanced Statistics</h2>
+    <p class="text-center mt-2 text-gray-600">Reach more people, get real engagement, and watch your numbers soar -
+      without the guesswork</p>
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 px-4 sm:px-8 lg:px-12 xl:px-20 py-10 mt-8 xl:mt-10">
+
+      <div class="bg-black col rounded-md p-4 h-full flex flex-col justify-between"
+        style="box-shadow: 10px 7px 20px rgb(87, 78, 78);">
+        <i class="fas fa-chart-line text-cyan-400 text-4xl"></i>
+        <div class="mt-3">
+          <p class="text-white text-2xl font-semibold">4.3x Faster <br> Follower Growth</p>
+          <p class="text-sm text-gray-500 font-semibold mt-2">
+            Our AI-driven target hits the right audience at the right time.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-black col rounded-md p-4 h-full flex flex-col justify-between"
+        style="box-shadow: 10px 7px 20px rgb(87, 78, 78);">
+        <i class="fas fa-heart text-pink-500 text-4xl"></i>
+        <div class="mt-3">
+          <p class="text-white text-2xl font-semibold">87% Higher Engagement Rate</p>
+          <p class="text-sm text-gray-500 font-semibold mt-2">
+            By optimizing post timing, format, and hashtags, we increase likes and comments.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-black col rounded-md p-4 h-full flex flex-col justify-between"
+        style="box-shadow: 10px 7px 20px rgb(87, 78, 78);">
+        <i class="fas fa-sliders-h text-yellow-400 text-4xl"></i>
+        <div class="mt-3">
+          <p class="text-white text-2xl font-semibold">Custom Analytics</p>
+          <p class="text-sm text-gray-500 font-semibold mt-2">
+            Track metrics that matter and adapt your strategy in real-time.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-black col rounded-md p-4 h-full flex flex-col justify-between"
+        style="box-shadow: 10px 7px 20px rgb(87, 78, 78);">
+        <i class="fas fa-dollar-sign text-green-400 text-4xl"></i>
+        <div class="mt-3">
+          <p class="text-white text-2xl font-semibold">4.5x ROAS</p>
+          <p class="text-sm text-gray-500 font-semibold mt-2">
+            Managed ad campaigns allocate budget to top-performing platforms automatically.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </section>
+  <div class="swiper max-w-6xl mx-auto px-4">
+    <!-- wrapper -->
+    <div class="swiper-wrapper">
+      <!-- slide 1 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center gap-4">
+            <img src="https://i.pravatar.cc/100?img=32" alt="avatar"
+              class="w-16 h-16 rounded-full object-cover border-2 border-white/20">
+            <div>
+              <p class="font-semibold">Social Media Influencer</p>
+              <p class="text-gray-300 text-sm">Sarah K., Lifestyle Influencer</p>
+            </div>
+          </div>
+          <p class="text-gray-200 mt-4 text-base leading-relaxed">“EchoPulse helped me grow my followers by 300% in just
+            2 months! Engagement on my posts is through the roof.”</p>
+        </div>
+      </div>
+
+      <!-- slide 2 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center gap-4">
+            <img src="https://i.pravatar.cc/100?img=12" alt="avatar"
+              class="w-16 h-16 rounded-full object-cover border-2 border-white/20">
+            <div>
+              <p class="font-semibold">Small Business Owner</p>
+              <p class="text-gray-300 text-sm">David L., Boutique Owner</p>
+            </div>
+          </div>
+          <p class="text-gray-200 mt-4 text-base leading-relaxed">“I never imagined reaching so many new customers
+            online. EchoPulse made marketing effortless and effective.”</p>
+        </div>
+      </div>
+
+      <!-- slide 3 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center gap-4">
+            <img src="https://i.pravatar.cc/100?img=15" alt="avatar"
+              class="w-16 h-16 rounded-full object-cover border-2 border-white/20">
+            <div>
+              <p class="font-semibold">Content Creator</p>
+              <p class="text-gray-300 text-sm">Mia T., YouTuber</p>
+            </div>
+          </div>
+          <p class="text-gray-200 mt-4 text-base leading-relaxed">“I can finally focus on creating content while
+            EchoPulse boosts my audience. It’s like having a growth team on autopilot.”</p>
+        </div>
+      </div>
+
+      <!-- slide 4 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center gap-4">
+            <img src="https://i.pravatar.cc/100?img=20" alt="avatar"
+              class="w-16 h-16 rounded-full object-cover border-2 border-white/20">
+            <div>
+              <p class="font-semibold">Startup Founder</p>
+              <p class="text-gray-300 text-sm">James R., Tech Startup</p>
+            </div>
+          </div>
+          <p class="text-gray-200 mt-4 text-base leading-relaxed">“Our brand awareness skyrocketed thanks to EchoPulse.
+            The analytics are simple to use and really actionable.”</p>
+        </div>
+      </div>
+
+      <!-- slide 5 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center gap-4">
+            <img src="https://i.pravatar.cc/100?img=5" alt="avatar"
+              class="w-16 h-16 rounded-full object-cover border-2 border-white/20">
+            <div>
+              <p class="font-semibold">Blogger</p>
+              <p class="text-gray-300 text-sm">Olivia W., Travel Blogger</p>
+            </div>
+          </div>
+          <p class="text-gray-200 mt-4 text-base leading-relaxed">“From 1k to 10k followers in three months — the growth
+            is real, organic, and highly engaging. Highly recommend!”</p>
+        </div>
+      </div>
+
+      <!-- slide 6 -->
+      <div class="swiper-slide">
+        <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
+          <div class="flex items-center gap-4">
+            <img src="https://i.pravatar.cc/100?img=7" alt="avatar"
+              class="w-16 h-16 rounded-full object-cover border-2 border-white/20">
+            <div>
+              <p class="font-semibold">Digital Marketer</p>
+              <p class="text-gray-300 text-sm">Ethan M., Freelance Marketer</p>
+            </div>
+          </div>
+          <p class="text-gray-200 mt-4 text-base leading-relaxed">“Using EchoPulse, I managed to increase client
+            engagement by 70% without spending hours on strategy. Truly a game-changer.”</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- pagination & nav -->
+    <div class="swiper-pagination mt-6"></div>
+  </div>
+  </section>
+
+
+
+  <section class="bg-indigo-950 grid xl:mt-7 mt-10 md:mt- justify-center p-10 items-center text-center"
+    style="background-image: url('./images/bg-boost-desktop.svg'); background-repeat: no-repeat;">
+    <p class="text-center text-3xl font-bold text-white">Boost your links today</p>
+    <button class="mt-5 text-white font-bold bg-cyan-400 px-4 py-1 rounded-full text-xl">Get Started</button>
+  </section>
+
+  <footer
+    class="bg-gray-900 h-full xl:flex gap-3 lg:text-start xl:text-start md:text-start sm:text-start text-center text-white lg:flex md:flex sm:flex justify-between px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
+    <p class="text-white font-bold text-4xl cursor-not-allowed">EchoPulse</p>
+
+    <div class="mt-3 md:mt-0">
+      <p class="font-bold text-lg">Features</p>
+      <ul class="mt-4">
+        <li><a href="">Link Shortening</a></li>
+        <li><a href="">Branded Links</a></li>
+        <li><a href="">Analytics</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-bold text-lg">Resources</p>
+      <ul class="mt-4">
+        <li><a href="">Blog</a></li>
+        <li><a href="">Developers</a></li>
+        <li><a href="">Support</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <p class="font-bold text-lg">Company</p>
+      <ul class="mt-4">
+        <li><a href="">About</a></li>
+        <li><a href="">Our Team</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="mt-3 md:mt-0 flex gap-3 justify-center items-center">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
