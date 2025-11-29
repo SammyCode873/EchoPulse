@@ -29,3 +29,12 @@ var swiper = new Swiper(".swiper", {
         1024: { slidesPerView: 3 },
     },
 });
+
+const loginPage = document.getElementById("loginPage");
+const loginBtn = document.getElementById("loginBtn");
+const homePage = document.getElementById("homePage") 
+
+loginBtn.onclick = ()  => {
+    loginPage.classList.toggle('block');
+    homePage.classList.toggle('hidden')
+}

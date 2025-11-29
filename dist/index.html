@@ -16,18 +16,18 @@
 </head>
 
 <body class="">
-  <header class="flex sticky top-0 bg-white justify-between items-center px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
+  <header class="flex sticky z-50 top-0 bg-white justify-between items-center px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
     <section class="flex items-center gap-7">
       <p class="font-bold text-gray-900 text-4xl cursor-not-allowed">EchoPulse</p>
       <ul class="hidden md:flex items-center gap-6 font-semibold text-gray-500">
-        <li><a href="">Features</a></li>
+        <li><a href="./features.html">Features</a></li>
         <li><a href="">Pricing</a></li>
         <li><a href="">Resources</a></li>
       </ul>
     </section>
 
     <div class="hidden md:flex gap-4 items-center">
-      <button class="font-semibold text-gray-500">Login</button>
+      <a href="./loginPage.html"   class="font-semibold text-gray-500">Login</a>
       <button class="text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button>
     </div>
 
@@ -36,7 +36,7 @@
     <section id="menu"
       class="absolute top-20 left-1/2 -translate-x-1/2 w-[85%]  p-6 rounded-xl font-semibold text-white bg-purple-950 hidden text-center md:hidden">
       <ul class="leading-8">
-        <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Features</a></li>
+        <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="features.html">Features</a></li>
         <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Pricing</a></li>
         <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Resources</a></li>
       </ul>
@@ -44,13 +44,13 @@
       <hr class="my-4 border-gray-700">
 
       <div>
-        <button class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full mb-2">Login</button>
+        <a href="./loginPage.html" class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full mb-2">Login</a>
         <button class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button>
       </div>
     </section>
   </header>
 
-  <main class="px-4 sm:px-8 lg:px-12 xl:px-20 md:pb-11 sm:pb-11 lg:h-screen">
+  <main class="px-4 sm:px-8 lg:px-12 xl:px-20 md:pb-11 sm:pb-11">
     <section class="flex flex-col lg:flex-row-reverse items-center justify-between mt-24 gap-10">
       <img src="./images/illustration-working.svg" alt=""
         class="mx-auto w-[90%] sm:w-[70%] md:w-[55%] lg:w-[60%] xl:w-[50%]">
@@ -88,7 +88,7 @@
     <section
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6 px-4 sm:px-8 lg:px-12 xl:px-20 py-10 mt-8 xl:mt-10">
 
-      <div class="bg-black col rounded-md p-4 h-full flex flex-col justify-between"
+      <div class="bg-black hover:scale-110 duration-500 rounded-md p-4 h-full flex flex-col justify-between"
         style="box-shadow: 10px 7px 20px rgb(87, 78, 78);">
         <i class="fas fa-chart-line text-cyan-400 text-4xl"></i>
         <div class="mt-3">
@@ -99,7 +99,7 @@
         </div>
       </div>
 
-      <div class="bg-black col rounded-md p-4 h-full flex flex-col justify-between"
+      <div class="bg-black hover:scale-110 duration-500 rounded-md p-4 h-full flex flex-col justify-between"
         style="box-shadow: 10px 7px 20px rgb(87, 78, 78);">
         <i class="fas fa-heart text-pink-500 text-4xl"></i>
         <div class="mt-3">
@@ -110,7 +110,7 @@
         </div>
       </div>
 
-      <div class="bg-black col rounded-md p-4 h-full flex flex-col justify-between"
+      <div class="bg-black hover:scale-110 duration-500 rounded-md p-4 h-full flex flex-col justify-between"
         style="box-shadow: 10px 7px 20px rgb(87, 78, 78);">
         <i class="fas fa-sliders-h text-yellow-400 text-4xl"></i>
         <div class="mt-3">
@@ -121,7 +121,7 @@
         </div>
       </div>
 
-      <div class="bg-black col rounded-md p-4 h-full flex flex-col justify-between"
+      <div class="bg-black hover:scale-110 duration-500 rounded-md p-4 h-full flex flex-col justify-between"
         style="box-shadow: 10px 7px 20px rgb(87, 78, 78);">
         <i class="fas fa-dollar-sign text-green-400 text-4xl"></i>
         <div class="mt-3">
@@ -153,7 +153,6 @@
         </div>
       </div>
 
-      <!-- slide 2 -->
       <div class="swiper-slide">
         <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
           <div class="flex items-center gap-4">
@@ -169,7 +168,7 @@
         </div>
       </div>
 
-      <!-- slide 3 -->
+      
       <div class="swiper-slide">
         <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
           <div class="flex items-center gap-4">
@@ -185,7 +184,6 @@
         </div>
       </div>
 
-      <!-- slide 4 -->
       <div class="swiper-slide">
         <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
           <div class="flex items-center gap-4">
@@ -242,7 +240,7 @@
 
 
 
-  <section class="bg-indigo-950 grid xl:mt-7 mt-10 md:mt- justify-center p-10 items-center text-center"
+  <section class="bg-indigo-950 grid xl:mt-7 bg-cover mt-10 md:mt- justify-center p-10 items-center text-center"
     style="background-image: url('./images/bg-boost-desktop.svg'); background-repeat: no-repeat;">
     <p class="text-center text-3xl font-bold text-white">Boost your links today</p>
     <button class="mt-5 text-white font-bold bg-cyan-400 px-4 py-1 rounded-full text-xl">Get Started</button>
@@ -289,6 +287,9 @@
     </div>
   </footer>
 
+
+
+  
   <script src="./swiper/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>
