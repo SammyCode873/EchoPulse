@@ -4,76 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EchoPulse - Feel the engagement ripple</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
     <style>
-        i {
-            animation: bounce 3s infinite;
-            animation-play-state: running;
+        ::-webkit-scrollbar-thumb {
+            background-color: cyan;
+            border-radius: 30px;
         }
 
-        i:hover {
-            animation: spin 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-            /* animation-iteration-count: 1; */
-            /* animation: bounce 3s infinite; */
-            
-        }
-        .fa-facebook:hover{
-            color: blue;
-            transition:1.32s ease-in-out;
-        }
-        .fa-youtube:hover{
-            color: red;
-            transition: 1.3s ease-in-out;
-        }
-        .fa-twitter:hover{
-            color: rgb(104, 191, 220);
-            transition: 1.3s ease-in-out ;
-
+        ::-webkit-scrollbar {
+            background-color: rgb(0, 109, 128);
         }
 
         @keyframes spin {
-
-            0%,
-            100% {
-                transform: rotate(0);
+            from {
+                transform: rotate(0deg);
             }
 
-            50% {
+            to {
                 transform: rotate(360deg);
-            }
-        }
-
-        @keyframes bounce {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-20px);
             }
         }
     </style>
 </head>
 
-<body id="status">
-    <header class="flex sticky top-0 z-50 bg-white justify-between items-center px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
+<body id="status" class="">
+    <header class="flex sticky top-0 z-50  bg-white justify-between items-center px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
         <section class="flex items-center gap-7">
-            <p class="font-bold text-gray-900 text-4xl cursor-not-allowed">EchoPulse</p>
+            <p class="font-bold  text-4xl cursor-not-allowed">EchoPulse</p>
             <ul class="hidden md:flex items-center gap-6 font-semibold text-gray-500">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Resources</a></li>
+                <li><a href="./pricing.html">Pricing</a></li>
             </ul>
         </section>
 
         <div class="hidden md:flex gap-4 items-center">
-            <a href="./loginPage.html" class="font-semibold text-gray-500">Login</a>
-            <button class="text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button>
+            <button class="font-semibold text-gray-500"><a href="./login.html">Login</a></button>
+            <a href="./signup.html"class=""><button class="text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button></a>
         </div>
 
         <button id="menuBtn" class="fa-solid fa-bars block md:hidden text-gray-600 text-3xl"></button>
@@ -83,21 +54,21 @@
             <ul class="leading-8">
                 <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="./index.html">Home</a></li>
                 <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Pricing</a></li>
-                <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Resources</a></li>
             </ul>
             <hr class="my-4 border-gray-700">
             <div>
-                <a href="./loginPage.html"
+                <a href="./login.html"
                     class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full mb-2">Login</a>
-                <button class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign
-                    Up</button>
+                <a href="./signup.html"><button
+                        class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign
+                        Up</button></a>
             </div>
         </section>
     </header>
 
     <main class="px-4 sm:px-8 lg:px-12 xl:px-20 md:pb-11 sm:pb-11">
         <section class="flex flex-col lg:flex-row-reverse items-center justify-between mt-24 gap-10">
-            <img src="./images/illustration-working.svg" alt=""
+            <img src="./images/ChatGPT Image Nov 29, 2025, 08_21_20 PM.png" alt=""
                 class="mx-auto w-[90%] sm:w-[70%] md:w-[55%] lg:w-[60%] xl:w-[50%]">
 
             <div class="flex-1">
@@ -150,8 +121,7 @@
     </section>
 
 
-
-    <main class="bg-blue-950 xl:mt-44 lg:mt-44 py-10 md:mt-52 sm:mt-28 mt-48">
+    <main id="coreFeatures" class="bg-blue-950 xl:mt-44 lg:mt-44 py-10 md:mt-52 sm:mt-28 mt-48">
         <div class="">
             <p class="text-center text-white xl:text-5xl lg:text-4xl md:text-3xl sm:text-3xl text-3xl font-bold">Our
                 Core Features</p>
@@ -188,7 +158,7 @@
                     <div
                         class="bg-blue-600/80 backdrop-blur-md text-white px-8 py-10 rounded-2xl shadow-xl shadow-black/40 text-center">
                         <p class="text-xl md:text-2xl font-semibold text-white tracking-wide">
-                            Fast Delivery, No Waiting
+                              Fast Delivery, No Waiting
                         </p>
                         <p class="">Your orders begin processing almost immediately. You don't have to wait days or
                             weeks for results. Once you place an order, the boost start rolling in.</p>
@@ -236,72 +206,264 @@
             <p class="font-bold text-3xl">Platform Coverage</p>
         </div>
 
-        <section class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 mt-5 gap-5 ">
+        <section
+            class="grid grid-cols-1 px-4 lg:grid-cols-5 xl:px-6 lg:px-5 xl:mt-8 lg:mt-9 md:mt-11 sm:mt-10  md:x-5 sm:px-4 xl:grid-cols-5 text-white md:grid-cols-3 sm:grid-cols-2 mt-5 gap-5 xl:gap-6 lg:gap-6 sm:gap-4 md:gap-5 ">
 
-            <div class="div text-center">
+            <div
+                class="text-center flex flex-col justify-self-center items-center justify-items-center justify-content-center bg-indigo-950 hover:scale-110 duration-500 rounded-md p-3">
 
-                <i class="fab fa-instagram text-7xl flex justify-self-center"></i>
+                <i class="fab fa-instagram text-7xl flex justify-self-center ml-6"></i>
 
-                <section class="xl:px-24 lg:px-24 md:px-0  sm:px-24  px-32">
-                    <p class="">Followers, likes, Comments,, Views, shares, story views,reel plays.</p>
+                <section class="px-4">
+                    <p class="mt-3">Followers, likes, Comments, Views, shares, story views, reel plays.</p>
                 </section>
 
             </div>
 
-            <div class="div text-center">
+            <div
+                class=" text-center flex flex-col justify-self-center items-center justify-items-center justify-content-center bg-indigo-950 hover:scale-110 duration-500 rounded-md p-3">
 
-                <i class="fab fa-tiktok text-7xl  flex justify-self-center"></i>
+                <i class="fab fa-tiktok text-7xl  flex justify-self-center ml-6"></i>
 
-                <section class="xl:px-24 lg:px-24 md:px-0 sm:px-24 px-32">
-                    <p class="">Followers, likes, Comments,, Views, shares, story views,reel plays.</p>
+                <section class="px-4">
+                    <p class="mt-3">Followers, likes, Comments, Video views, Shares.</p>
                 </section>
 
             </div>
 
-            <div class="div text-center">
+            <div
+                class="div text-center flex flex-col justify-self-center items-center justify-items-center justify-content-center bg-indigo-950 hover:scale-110 duration-500 rounded-md p-3">
 
-                <i class="fab fa-youtube text-7xl  flex justify-self-center"></i>
+                <i class="fab fa-youtube text-7xl  flex justify-self-center ml-4"></i>
 
-                <section class="xl:px-24 lg:px-24 md:px-0  sm:px-24 px-32">
-                    <p class="">Followers, likes, Comments,, Views, shares, story views,reel plays.</p>
+                <section class="px-4">
+                    <p class="mt-3">Subscribers, likes, video views, watch time.</p>
                 </section>
 
             </div>
 
-            <div class="div text-center">
-                <i class="fab fa-facebook text-7xl  flex justify-self-center"></i>
-                <section class="xl:px-24 lg:px-24 md:px-0  sm:px-24 px-32">
-                    <p class="">Followers, likes, Comments,, Views, shares, story views,reel plays.</p>
+            <div
+                class="text-center flex flex-col justify-self-center items-center justify-items-center justify-content-center bg-indigo-950 hover:scale-110 duration-500 rounded-md p-3">
+                <i class="fab fa-facebook text-7xl  flex justify-self-center ml-6"></i>
+                <section class="px-4">
+                    <p class="mt-3">Page likes, Post reaction video views.</p>
                 </section>
             </div>
 
-            <div class="div text-center">
+            <div
+                class="text-center flex flex-col justify-self-center items-center justify-items-center justify-content-center bg-indigo-950 hover:scale-110 duration-500 rounded-md p-3">
 
-                <i class="fab fa-twitter text-7xl flex justify-self-center "></i>
+                <i class="fab fa-twitter text-7xl flex justify-self-center ml-6"></i>
 
-                <section class="xl:px-24 lg:px-24 md:px-0 sm:px-24 px-32">
-                    <p class=""> Followers, likes, Comments,, Views, shares, story views,reel plays.</p>
+                <section class="px-4">
+                    <p class="mt-3"> Followers, likes, Retweets, Impression.</p>
                 </section>
 
             </div>
 
         </section>
     </main>
+    <section class="flex flex-col justify-content-center w-fit marker: mx-52 mt-">
+        <div
+            class="bg-gradient-to-br hover:scale-110 duration-700 from-gray-200 to-gray-300 shadow-xl shadow-black/40 rounded-xl p-8 flex flex-col items-center text-center">
+            <p class="text-3xl lg:text-4xl xl:text-5xl font-bold text-indigo-900 drop-shadow-sm"> Why Choose Us
+            </p>
+            <p class="mt-3 text-gray-700 leading-relaxed">
+                You have many boosting websites to choose from, but most use outdated, unsafe or slow methods. We
+                combine speed, safety and smooth delvery to create a growth experience that feels natural
+            </p>
+        </div>
+    </section>
+    <section class="max-w-3xl mx-auto px-6 mt-52">
+        <h2 class="text-center text-4xl font-bold">FAQs</h2>
 
+        <div class="mt-10 space-y-4">
 
-    '
-    <faq>
-        <div class="">
-            <button>Will Boosts Drop ?</button>
-            <div class="">
-                <p class="">Yes. W</p>
+            <div class="bg-gray-700 text-white border border-gray-800 rounded-xl p-4 accordion-item">
+                <div class="flex justify-between items-center accordion-header cursor-pointer">
+                    <p class="font-medium">Is Boosting Safe?</p>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="text-gray-200 mt-3">
+                        Yes. Everything is securely delivered through stable networks.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-700 border text-white border-gray-800 rounded-xl p-4 accordion-item">
+                <div class="flex justify-between items-center accordion-header cursor-pointer">
+                    <p class="font-medium">Will The Boosts Drop?</p>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="text-gray-200 mt-3">
+                        Drops are rare, but we refill instantly if they happen.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-gray-700 border text-white border-gray-800 rounded-xl p-4 accordion-item">
+                <div class="flex justify-between items-center accordion-header cursor-pointer">
+                    <p class="font-medium">Can I Use This For A Business Account</p>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="text-gray-200 mt-3">
+                        Yes Many brands use boosting to kick-start their presence
+                    </p>
+                </div>
+            </div>
+            <div class="bg-gray-700 border text-white border-gray-800 rounded-xl p-4 accordion-item">
+                <div class="flex justify-between items-center accordion-header cursor-pointer">
+                    <p class="font-medium">Do I Need To Follow Back?</p>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300">
+                    <p class="text-gray-200 mt-3">
+                        No, Everything is Automatic
+                    </p>
+                </div>
             </div>
         </div>
-    </faq>
+    </section>
+
+    <footer
+        class="bg-gray-900 h-full xl:flex xl:gap-4 md:gap-3 sm:gap-3  gap-3 mt-52 lg:text-start xl:text-start md:text-start sm:text-start text-center text-white lg:flex md:flex sm:flex justify-between px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
+        <p class="text-white font-bold text-4xl cursor-not-allowed">EchoPulse</p>
+
+        <div class="mt-3 md:mt-0 sm:mt-0 xl:mt-0 lg:mt-0">
+            <p class="font-bold text-lg">Features</p>
+            <ul class="mt-4">
+                <li><a href="#coreFeatures">Core Features</a></li>
+                <li><a href="">Platform Coverage</a></li>
+                <li><a href="">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="font-bold text-lg">Resources</p>
+            <ul class="mt-4">
+                <li><a href="">Blog</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="font-bold text-lg">Company</p>
+            <ul class="mt-4">
+                <li><a href="">About</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="mt-3 md:mt-0 flex gap-3 justify-center items-center">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <div id="global-loading-spinner"
+        class="fixed inset-0 flex items-center justify-center bg-white opacity-75 z-50 hidden">
+        <div class="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+    </div>
+
+
 
     <script src="./swiper/swiper-bundle.min.js"></script>
-    <script src="./features.js"></script>
+    <script>
+        const headers = document.querySelectorAll('.accordion-header');
 
+        headers.forEach(header => {
+            header.addEventListener("click", () => {
+                const content = header.nextElementSibling;
+
+                content.style.maxHeight
+                    ? content.style.maxHeight = null
+                    : content.style.maxHeight = content.scrollHeight + "px";
+
+                header.querySelector("i").classList.toggle("fa-plus");
+                header.querySelector("i").classList.toggle("fa-minus");
+            });
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const spinner = document.getElementById('global-loading-spinner');
+            const MIN_LOAD_TIME = 6000;
+
+            const showSpinner = () => {
+                spinner.classList.remove('hidden');
+                spinner.classList.add('flex');
+            };
+
+            document.body.addEventListener('click', (event) => {
+                const targetElement = event.target.closest('a, button');
+
+                if (targetElement) {
+                    let destinationUrl = null;
+
+                    if (targetElement.tagName === 'A') {
+                        destinationUrl = targetElement.getAttribute('href');
+                        if (destinationUrl && destinationUrl !== '#' && !destinationUrl.startsWith('javascript:')) {
+                            event.preventDefault();
+                        } else {
+                            return;
+                        }
+                    } else if (targetElement.tagName === 'BUTTON') {
+                        const form = targetElement.closest('form');
+                        if (form && targetElement.type === 'submit') {
+                            destinationUrl = form.action || window.location.href;
+                            event.preventDefault();
+                        } else {
+                            return;
+                        }
+                    }
+
+                    if (destinationUrl) {
+                        showSpinner();
+                        setTimeout(() => {
+                            window.location.href = destinationUrl;
+                        }, MIN_LOAD_TIME);
+                    }
+                }
+            });
+
+            window.addEventListener('pageshow', (event) => {
+                if (event.persisted) {
+                    spinner.classList.add('hidden');
+                    spinner.classList.remove('flex');
+                }
+            });
+        });
+
+        window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
+        });
+
+        document.querySelectorAll("a[href]").forEach(link => {
+            const url = link.getAttribute("href");
+
+
+            if (url && !url.startsWith("http") && !link.hasAttribute("target")) {
+                link.addEventListener("click", e => {
+                    e.preventDefault();
+                    document.body.classList.remove("loaded");
+                    setTimeout(() => {
+                        window.location.href = url;
+                    }, 500);
+                });
+            }
+        });
+
+
+
+    </script>
+    <script src="./features.js"></script>
 </body>
 
 </html>

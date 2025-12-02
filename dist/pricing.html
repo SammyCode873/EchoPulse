@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <title>Echo Pulse - Pricing.</title>
+    <style>
+        .swiper-pagination-bullet-active {
+            background-color: #1e1b4b;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: rgb(0, 109, 128);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: cyan;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <header class="flex sticky z-50 top-0 bg-white justify-between items-center px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
+        <section class="flex items-center gap-7">
+            <p class="font-bold text-gray-900 text-4xl cursor-not-allowed">EchoPulse</p>
+            <ul class="hidden md:flex items-center gap-6 font-semibold text-gray-500">
+                <li><a href="./features.html">Features</a></li>
+                <li><a href="">Pricing</a></li>
+            </ul>
+        </section>
+
+        <div class="hidden md:flex gap-4 items-center">
+            <a href="./loginPage.html" class="font-semibold text-gray-500">Login</a>
+            <button class="text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button>
+        </div>
+
+        <button class="md:hidden block text-gray-600 text-3xl"><i id="menuBtn" class="fa-solid fa-bars"></i></button>
+
+        <section id="menu"
+            class="absolute top-20 left-1/2 -translate-x-1/2 w-[85%]  p-6 rounded-xl font-semibold text-white bg-purple-950 hidden text-center md:hidden">
+            <ul class="leading-8">
+                <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="features.html">Features</a></li>
+                <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Pricing</a></li>
+                <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Resources</a></li>
+            </ul>
+
+            <hr class="my-4 border-gray-700">
+
+            <div>
+                <a href="./loginPage.html"
+                    class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full mb-2">Login</a>
+                <button class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign
+                    Up</button>
+            </div>
+        </section>
+    </header>
+    <section class="px-20 max-lg:px-10 max-md:px-6 max-sm:px-4">
+
+        <section class="flex flex-row-reverse items-center justify-between max-lg:flex-col max-lg:text-center">
+            <img class="w-[400px] mt-10 max-md:w-72 max-sm:w-60"
+                src="./images/ChatGPT Image Nov 29, 2025, 08_21_20 PM.png" alt="">
+
+            <section class="max-lg:mt-6">
+                <h1
+                    class="text-5xl max-md:text-4xl max-sm:text-3xl font-bold font-[Segoe UI] text-indigo-950 leading-tight">
+                    Grow your social <br class="max-lg:hidden"> presence effortlessly
+                </h1>
+
+                <p class="mt-4 text-indigo-950 w-80 max-lg:w-full text-lg leading-8 max-md:text-base">
+                    Boost followers, likes, and engagement instantly across all major platforms.
+                    Real results. Fast delivery. Total control.
+                </p>
+
+                <button class="mt-4 font-medium text-white bg-cyan-400 px-6 py-2 rounded-full max-sm:text-sm">
+                    Get Started
+                </button>
+            </section>
+        </section>
+
+        <section class="bg-indigo-950 mt-6 rounded-lg p-7 mx-36 max-xl:mx-20 max-lg:mx-10 max-md:mx-2 max-sm:px-4">
+
+            <section class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide bg-white rounded-lg p-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <header class="flex items-center mt-4 ml-3 gap-3">
+                                    <i class="fa-brands fa-instagram text-2xl text-pink-600"></i>
+                                    <p class="font-medium max-sm:text-sm">Instagram Followers</p>
+                                </header>
+
+                                <section
+                                    class="flex gap-16 max-lg:gap-10 max-md:gap-6 max-sm:gap-4 mt-6 mb-6 ml-10 max-sm:ml-4">
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">500</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">₦1500</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">1K</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">₦3000</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">5K</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">₦15,000</p>
+                                    </div>
+                                </section>
+                                <p class="text-indigo-950 font-bold pl-7">PSO - Real Users</p>
+                            </div>
+                            <button class="bg-sky-600 ml-7 py-6 px-7 w-fit rounded-full"><i
+                                    class="fa-solid fa-arrow-right text-white"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide bg-white rounded-lg p-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <header class="flex items-center mt-4 ml-3 gap-3">
+                                    <i class="fa-brands fa-tiktok text-2xl"></i>
+                                    <p class="font-medium max-sm:text-sm">Tiktok Followers</p>
+                                </header>
+
+                                <section
+                                    class="flex gap-16 max-lg:gap-10 max-md:gap-6 max-sm:gap-4 mt-6 mb-6 ml-10 max-sm:ml-4">
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">1k</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$6</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">2K</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$12</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">6K</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$22</p>
+                                    </div>
+                                </section>
+                                <p class="text-indigo-950 font-bold pl-7">PSO - Real Users</p>
+                            </div>
+                            <button class="bg-sky-600 ml-7 py-6 px-7 w-fit rounded-full"><i
+                                    class="fa-solid fa-arrow-right text-white"></i></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide bg-white rounded-lg p-4">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <header class="flex items-center mt-4 ml-3 gap-3">
+                                    <i class="fa-brands fa-facebook text-2xl text-blue-600"></i>
+                                    <p class="font-medium max-sm:text-sm">Facebook Followers</p>
+                                </header>
+
+                                <section
+                                    class="flex gap-16 max-lg:gap-10 max-md:gap-6 max-sm:gap-4 mt-6 mb-6 ml-10 max-sm:ml-4">
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">1k</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$6</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">2K</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$5</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">6K</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$22</p>
+                                    </div>
+                                </section>
+                                <p class="text-indigo-950 font-bold pl-7">PSO - Real usErs</p>
+                            </div>
+                            <button class="bg-sky-600 ml-7 py-6 px-7 w-fit rounded-full"><i
+                                    class="fa-solid fa-arrow-right text-white"></i></button>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide bg-white rounded-lg p-4">
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <header class="flex items-center mt-4 ml-3 gap-3">
+                                    <i class="fa-brands fa-youtube text-2xl text-red-600"></i>
+                                    <p class="font-medium max-sm:text-sm">YouTube Subscribers</p>
+                                </header>
+
+                                <section
+                                    class="flex gap-16 max-lg:gap-10 max-md:gap-6 max-sm:gap-4 mt-6 mb-6 ml-10 max-sm:ml-4">
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">1k</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$6</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">2K</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$12</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-3xl max-sm:text-xl font-bold text-red-500">6K</p>
+                                        <p class="text-3xl max-sm:text-xl font-bold ">$22</p>
+                                    </div>
+                                </section>
+                                <p class="text-indigo-950 font-bold pl-7">PSO - Real Users</p>
+                            </div>
+                            <button class="bg-sky-600 ml-7 py-6 px-7 w-fit rounded-full"><i
+                                    class="fa-solid fa-arrow-right text-white"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </section>
+        </section>
+
+        <section class="mt-6">
+            <div>
+                <p
+                    class="text-center text-indigo-950 text-4xl max-md:text-3xl max-sm:text-2xl font-bold font-[Segoe UI]">
+                    Why People Choose Us
+                </p>
+                <p class="text-center text-indigo-950 text-lg max-md:text-base mt-2">
+                    Reliable, Fast, and Secure engagement boosting services
+                </p>
+            </div>
+
+            <section
+                class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 justify-self-center gap-24 max-lg:gap-12 max-sm:gap-8 mt-10">
+
+                <div class="bg-gray-200 cursor-pointer hover:scale-110 duration-500 w-fit p-7 rounded-md max-sm:w-full">
+                    <div class="flex items-center gap-3">
+                        <img src="./images/image.png" alt="" class="rounded-full w-14 hover:animate-spin"
+                            style="animation-iteration-count: 1; animation-duration: 1s;">
+                        <p class="text-lg font-bold max-sm:text-base">Fast Delivery</p>
+                    </div>
+                    <p class="text-indigo-950 text-lg mt-2 max-sm:text-base">
+                        Boost your account in minutes <br> with real-time delivery
+                    </p>
+                </div>
+
+                <div class="bg-gray-200 cursor-pointer hover:scale-110 duration-500 w-fit p-7 rounded-md max-sm:w-full">
+                    <div class="flex items-center gap-3">
+                        <img src="./images/Screenshot 2025-11-29 233834.png" alt=""
+                            class="rounded-full w-14 hover:animate-spin"
+                            style="animation-iteration-count: 1; animation-duration: 1s;">
+                        <p class="text-lg font-bold max-sm:text-base">Real Users</p>
+                    </div>
+                    <p class="text-indigo-950 text-lg mt-2 max-sm:text-base">
+                        <strong>Authentic</strong> engagement from real <br> profiles
+                    </p>
+                </div>
+
+                <div class="bg-gray-200 cursor-pointer hover:scale-110 duration-500 w-fit p-7 rounded-md max-sm:w-full">
+                    <div class="flex items-center gap-3">
+                        <img src="./images/Screenshot 2025-11-29 234001.png" alt=""
+                            class="rounded-full w-14 hover:animate-spin"
+                            style="animation-iteration-count: 1; animation-duration: 1s;">
+                        <p class="text-lg font-bold max-sm:text-base">Safe & Secure</p>
+                    </div>
+                    <p class="text-indigo-950 text-lg mt-2 max-sm:text-base">
+                        Safe boosting methods with zero <br> risk to your account.
+                    </p>
+                </div>
+
+            </section>
+        </section>
+
+    </section>
+
+    <section class="bg-indigo-800 mt-16 py-10 flex flex-col items-center justify-center gap-4 px-4">
+        <p class="text-center text-white text-4xl max-md:text-3xl max-sm:text-2xl font-bold font-[Segoe UI]">
+            Boost your social media today
+        </p>
+        <button class="mt-4 font-medium text-white bg-cyan-400 px-6 py-2 rounded-full max-sm:text-sm">
+            Get Started
+        </button>
+    </section>
+
+    <section class="mt-16 bg-indigo-950 text-white p-8 rounded-lg">
+        <h2 class="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+
+            <div class="border-b border-indigo-700 pb-3">
+                <button class="w-full flex justify-between items-center text-left font-bold text-lg accordion-header">
+                    Is this safe for my social media account?
+                    <i class="fa-solid fa-chevron-down text-white chevron-icon transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 mt-2">
+                    <p class="text-white leading-7">
+                        Yes, we use only safe, organic marketing methods that never put your account at risk.
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-b border-indigo-700 pb-3">
+                <button class="w-full flex justify-between items-center text-left font-bold text-lg accordion-header">
+                    How fast is the delivery?
+                    <i class="fa-solid fa-chevron-down text-white chevron-icon transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 mt-2">
+                    <p class="text-white leading-7">
+                        Delivery starts instantly and continues until the full amount is delivered.
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-b border-indigo-700 pb-3">
+                <button class="w-full flex justify-between items-center text-left font-bold text-lg accordion-header">
+                    Are these real followers?
+                    <i class="fa-solid fa-chevron-down text-white chevron-icon transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 mt-2">
+                    <p class="text-white leading-7">
+                        Yes! All followers come from real active social media users.
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-b border-indigo-700 pb-3">
+                <button class="w-full flex justify-between items-center text-left font-bold text-lg accordion-header">
+                    Do I need to give my password?
+                    <i class="fa-solid fa-chevron-down text-white chevron-icon transition-transform duration-300"></i>
+                </button>
+                <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 mt-2">
+                    <p class="text-white leading-7">
+                        Yes. We will **need** your password to boost and secure your social media profile or any
+                        confidential info.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer
+        class="mt-6 bg-gray-900 h-full xl:flex gap-3 lg:text-start xl:text-start md:text-start sm:text-start text-center text-white lg:flex md:flex sm:flex justify-between px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
+        <p class="text-white font-bold text-4xl cursor-not-allowed">EchoPulse</p>
+
+        <div class="mt-3 md:mt-0 sm:mt-0 xl:mt-0 lg:mt-0">
+            <p class="font-bold text-lg">Features</p>
+            <ul class="mt-4">
+                <li><a href="">Core Features</a></li>
+                <li><a href="">Platform Coverage</a></li>
+                <li><a href="">FAQs</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="font-bold text-lg">Resources</p>
+            <ul class="mt-4">
+                <li><a href="">Blog</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">Support</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <p class="font-bold text-lg">Company</p>
+            <ul class="mt-4">
+                <li><a href="">About</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="mt-3 md:mt-0 flex gap-3 justify-center items-center">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="swiper/swiper-bundle.min.js"></script>
+    <script src="pricing.js"></script>
+
+</body>
+
+</html>

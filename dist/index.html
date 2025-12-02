@@ -11,7 +11,14 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
   <style>
+    ::-webkit-scrollbar-thumb {
+            background-color: cyan;
+            border-radius: 30px;
+        }
 
+        ::-webkit-scrollbar {
+            background-color: rgb(0, 109, 128);
+        }
   </style>
 </head>
 
@@ -21,13 +28,12 @@
       <p class="font-bold text-gray-900 text-4xl cursor-not-allowed">EchoPulse</p>
       <ul class="hidden md:flex items-center gap-6 font-semibold text-gray-500">
         <li><a href="./features.html">Features</a></li>
-        <li><a href="">Pricing</a></li>
-        <li><a href="">Resources</a></li>
+        <li><a href="./pricing.html">Pricing</a></li>
       </ul>
     </section>
 
     <div class="hidden md:flex gap-4 items-center">
-      <a href="./loginPage.html"   class="font-semibold text-gray-500">Login</a>
+      <button><a href="./login.html" class="font-semibold text-gray-500">Login</a></button>
       <button class="text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button>
     </div>
 
@@ -38,21 +44,21 @@
       <ul class="leading-8">
         <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="features.html">Features</a></li>
         <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Pricing</a></li>
-        <li class="w-full hover:bg-purple-900 rounded-full py-1"><a href="">Resources</a></li>
       </ul>
 
       <hr class="my-4 border-gray-700">
 
       <div>
-        <a href="./loginPage.html" class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full mb-2">Login</a>
-        <button class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</button>
+        <a href="./loginPage.html"
+          class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full mb-2">Login</a>
+        <a href="./signup.html" class="block w-full text-white bg-cyan-400 font-semibold px-5 py-1.5 rounded-full">Sign Up</a>
       </div>
     </section>
   </header>
 
   <main class="px-4 sm:px-8 lg:px-12 xl:px-20 md:pb-11 sm:pb-11">
     <section class="flex flex-col lg:flex-row-reverse items-center justify-between mt-24 gap-10">
-      <img src="./images/illustration-working.svg" alt=""
+      <img src="./images/ChatGPT Image Nov 29, 2025, 08_21_20 PM.png" alt=""
         class="mx-auto w-[90%] sm:w-[70%] md:w-[55%] lg:w-[60%] xl:w-[50%]">
 
       <div class="flex-1">
@@ -76,8 +82,9 @@
     style="background-image: url('./images/bg-shorten-desktop.svg'); background-repeat: no-repeat; background-size: cover;">
     <div>
       <input type="text" name="socialLink" id="socialLink" placeholder="Paste Your Social Media Link..."
-        class="focus:outline-none bg-neutral-200 px-2 py-3 w-80"><br>
-      <button class="bg-cyan-400 px-20 mt-3 xl:py-2 text-center text-white font-medium rounded-md w-80">Boost</button>
+        class="focus:outline-none rounded-md bg-neutral-200 px-2 py-3 w-80"><br>
+      <button
+        class="bg-cyan-400 px-20 mt-3 xl:py-2  py-3 text-center text-white font-medium rounded-md w-80">Boost</button>
     </div>
   </section>
 
@@ -134,10 +141,8 @@
     </section>
 
   </section>
-  <div class="swiper max-w-6xl mx-auto px-4">
-    <!-- wrapper -->
+  <div class="swiper max-w-6xl mx-auto mt-20 px-4">
     <div class="swiper-wrapper">
-      <!-- slide 1 -->
       <div class="swiper-slide">
         <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
           <div class="flex items-center gap-4">
@@ -168,7 +173,7 @@
         </div>
       </div>
 
-      
+
       <div class="swiper-slide">
         <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
           <div class="flex items-center gap-4">
@@ -199,7 +204,6 @@
         </div>
       </div>
 
-      <!-- slide 5 -->
       <div class="swiper-slide">
         <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
           <div class="flex items-center gap-4">
@@ -215,7 +219,6 @@
         </div>
       </div>
 
-      <!-- slide 6 -->
       <div class="swiper-slide">
         <div class="testimonial-card bg-[#1f2350] text-white p-6 rounded-lg shadow-lg">
           <div class="flex items-center gap-4">
@@ -232,15 +235,14 @@
       </div>
 
     </div>
-
-    <!-- pagination & nav -->
     <div class="swiper-pagination mt-6"></div>
   </div>
   </section>
 
 
 
-  <section class="bg-indigo-950 grid xl:mt-7 bg-cover mt-10 md:mt- justify-center p-10 items-center text-center"
+  <section
+    class="bg-indigo-950 grid xl:mt-32 bg-cover mt-32 lg:mt-24 md:mt-24 sm:mt-16 justify-center p-10 items-center text-center"
     style="background-image: url('./images/bg-boost-desktop.svg'); background-repeat: no-repeat;">
     <p class="text-center text-3xl font-bold text-white">Boost your links today</p>
     <button class="mt-5 text-white font-bold bg-cyan-400 px-4 py-1 rounded-full text-xl">Get Started</button>
@@ -250,12 +252,12 @@
     class="bg-gray-900 h-full xl:flex gap-3 lg:text-start xl:text-start md:text-start sm:text-start text-center text-white lg:flex md:flex sm:flex justify-between px-4 sm:px-8 lg:px-12 xl:px-20 py-5">
     <p class="text-white font-bold text-4xl cursor-not-allowed">EchoPulse</p>
 
-    <div class="mt-3 md:mt-0">
+    <div class="mt-3 md:mt-0 sm:mt-0 xl:mt-0 lg:mt-0">
       <p class="font-bold text-lg">Features</p>
       <ul class="mt-4">
-        <li><a href="">Link Shortening</a></li>
-        <li><a href="">Branded Links</a></li>
-        <li><a href="">Analytics</a></li>
+        <li><a href="./features.html#coreFeatures">Core Features</a></li>
+        <li><a href="">Platform Coverage</a></li>
+        <li><a href="">FAQs</a></li>
       </ul>
     </div>
 
@@ -286,12 +288,38 @@
       <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
     </div>
   </footer>
+  <div id="global-loading-spinner"
+    class="fixed inset-0 flex items-center justify-center bg-white opacity-75 z-50 hidden">
+    <div class="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+  </div>
 
 
 
-  
-  <script src="./swiper/swiper-bundle.min.js"></script>
-  <script src="./script.js"></script>
+<script src="./swiper/swiper-bundle.min.js"></script>
+
+<script src="./script.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+
+    document.querySelectorAll("a[href]").forEach(link => {
+      const url = link.getAttribute("href");
+
+      if (url && !url.startsWith("http") && !link.hasAttribute("target")) {
+        link.addEventListener("click", e => {
+          e.preventDefault();
+          document.body.classList.remove("loaded");
+
+          setTimeout(() => {
+            window.location.href = url;
+          }, 500);
+        });
+      }
+    });
+  });
+</script>
+
 </body>
 
 </html>

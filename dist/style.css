@@ -1,42 +1,84 @@
- .col:hover {
-     transform: scale(1.1);
-     transition: transform ease .5s;
- }
+.col:hover {
+    transform: scale(1.1);
+    transition: transform ease .5s;
+}
 
 
- /* Force Swiper core layout in case other CSS overrides it */
- .swiper {
-     width: 100%;
- }
+.swiper {
+    width: 100%;
+}
 
- .swiper-slide {
-     flex-shrink: 0;
-     display: flex;
-     justify-content: center;
- }
+.swiper-slide {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
 
- /* make slides' cards fill reasonable width but remain centered */
- .testimonial-card {
-     width: 100%;
-     max-width: 720px;
- }
+.testimonial-card {
+    width: 100%;
+    max-width: 720px;
+}
 
- .swiper-button-next,
- .swiper-button-prev {
-     color: white;
-     --swiper-navigation-size: 34px;
-     width: 44px;
-     height: 44px;
-     background: rgba(0, 0, 0, 0.35);
-     border-radius: 999px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
- }
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    --swiper-navigation-size: 34px;
+    width: 44px;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
 
- .swiper-button-next::after,
- .swiper-button-prev::after {
-     font-size: 18px;
-     color: white;
- }
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 18px;
+    color: white;
+}
+
+.fa-facebook:hover {
+    color: rgb(10, 80, 170);
+    transition: 0.5s ease-in-out;
+}
+
+.fa-youtube:hover {
+    color: red;
+    transition: 0.5s ease-in-out;
+}
+
+.fa-twitter:hover {
+    color: rgb(104, 191, 220);
+    transition: 0.5s ease-in-out;
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 122, 145);
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Page fade-in */
+body {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}

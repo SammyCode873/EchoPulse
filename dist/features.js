@@ -30,6 +30,8 @@ var swiper = new Swiper(".swiper", {
     },
 });
 const docsagree = document.getElementById('col')
+
+
 const menuBtn = document.getElementById('menuBtn');
 const menu = document.getElementById('menu');
 
@@ -39,9 +41,29 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle('fa-bars')
 });
 
-// window.addEventListener('offline',  () =>{
-//     document.body.innerHTML = "<p>YOU ARE OFFLINE</p>";
-// })
+const loader = document.getElementById("loader");
+
+const clickable = document.querySelectorAll("button, a button, a[href]");
+
+clickable.forEach(item => {
+    item.addEventListener("click", (e) => {
+        // If link has a hash like # or is empty, ignore
+        // const parentLink = item.closest("a");
+        // if (parentLink && parentLink.getAttribute("href") === "#") return;
+
+        // Show loader
+        loader.style.display = "flex";
+
+        // If it’s a link, allow navigation normally
+        // Otherwise hide after delay so it doesn't stay forever
+        if (!parentLink && item.getAttribute("type") !== "submit") {
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 2000);
+        }
+    });
+});
+
 
 
 
@@ -76,3 +98,12 @@ menuBtn.addEventListener("click", () => {
 
 // // Run immediately
 // checkConnection();
+
+
+// const btn1 = document.getElementById('btn1')
+
+// btn1.addEventListener("click", () => {
+//     content.classList.add("block");
+// })
+
+
